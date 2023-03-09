@@ -20,7 +20,7 @@ function HeaderLi({ itemName, link, index }) {
                 const section = sections[i];
                 if (scrollPosition <= 100) {
                     setActiveLink();
-                } else if (scrollPosition >= section.offsetTop - 215) {
+                } else if (scrollPosition >= section.offsetTop - 230) {
                     setActiveLink(i);
                     console.log(activeLink);
                     break;
