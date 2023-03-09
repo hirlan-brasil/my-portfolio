@@ -88,18 +88,20 @@ function MainContent() {
                 <h1 className="text-3xl text-blue-400 font-bold pb-4">
                     .My Skills
                 </h1>
-                <div className=" space-x-3">
+                <div className="space-x-3">
                     <MainContentSkills path={html5Icon} alt={"Html5"} />
                     <MainContentSkills path={css3Icon} alt={"Css3"} />
                     <MainContentSkills
                         path={javascriptIcon}
                         alt={"JavaScript"}
                     />
-                    <MainContentSkills
-                        path={tailwindcssIcon}
-                        alt={"Tailwindcss"}
-                    />
-                    <MainContentSkills path={reactIcon} alt={"React"} />
+                    <div className="pt-2 space-x-3">
+                        <MainContentSkills path={reactIcon} alt={"React"} />
+                        <MainContentSkills
+                            path={tailwindcssIcon}
+                            alt={"Tailwindcss"}
+                        />
+                    </div>
                 </div>
             </div>
 
