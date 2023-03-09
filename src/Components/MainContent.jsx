@@ -111,7 +111,7 @@ function MainContent() {
             <div className="relative p-10" id="projetos">
                 <div className="absolute inset-x-0 top-1 text-center">
                     <h1 className="inline text-3xl text-blue-400 font-bold bg-slate-50 rounded-lg px-3 py-1">
-                        Projetos
+                        Projects
                     </h1>
                 </div>
                 <div className="mx-auto rounded-lg shadow-lg bg-slate-800 max-w-6xl">
