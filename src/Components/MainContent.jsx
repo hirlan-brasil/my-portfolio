@@ -17,7 +17,7 @@ function MainContent() {
     return (
         <div>
             {/*---- TOP ----*/}
-            <div className="flex items-center max-w-6xl mx-auto">
+            <div className="section1 flex items-center max-w-6xl mx-auto">
                 <div className="hidden sm:inline-block p-6">
                     <img
                         src={foto}
