@@ -5,19 +5,24 @@ function HeaderLi({ itemName, link, index }) {
 
     useEffect(() => {
         const handleScroll = () => {
+            const sections = [
+                document.querySelector("#quemEuSou"),
+                document.querySelector("#habilidades"),
+                document.querySelector("#projetos"),
+                document.querySelector("#contatos"),
+            ];
             const scrollPosition =
                 window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollPosition <= 300) {
-                setActiveLink();
-            } else if (scrollPosition <= 550) {
-                setActiveLink(0);
-            } else if (scrollPosition <= 850) {
-                setActiveLink(1);
-            } else if (scrollPosition <= 1200) {
-                setActiveLink(2);
-            } else if (scrollPosition > 1200) {
-                setActiveLink(3);
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const section = sections[i];
+                if (scrollPosition <= 100) {
+                    setActiveLink();
+                } else if (scrollPosition >= section.offsetTop - 210) {
+                    setActiveLink(i);
+                    console.log(activeLink);
+                    break;
+                }
             }
         };
 
