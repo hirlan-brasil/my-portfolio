@@ -68,8 +68,8 @@ function MainContent() {
             <div id="quemEuSou" className=" px-8 py-2 max-w-6xl mx-auto">
                 <h1 className="text-3xl text-blue-400 font-bold">About me</h1>
                 <div className="flex">
-                    <span className="min-w-[80px] text-2xl">--------</span>
-                    <p className="text-lg pt-1">
+                    <span className="flex-none text-2xl">--------</span>
+                    <p className="text-lg pl-1 pt-1">
                         Lorem laboris ad sit in laboris.Velit anim eiusmod
                         consectetur est labore.Quis deserunt nisi ad culpa.Do
                         voluptate anim tempor nostrud ex irure qui non commodo
