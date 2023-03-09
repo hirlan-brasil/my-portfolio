@@ -1,9 +1,17 @@
 import githubIcon from "../assets/redes-sociais-icons/github-icon.png";
 import linkedlnIcon from "../assets/redes-sociais-icons/linkedIn-icon.png";
+
 import foto from "../assets/minha-foto.png";
-import projectsImg from "../assets/projects-img.png";
+
 import MainContentSkills from "./MainContentSkills";
+import html5Icon from "../assets/skills-icons/html5-icon.svg";
+import css3Icon from "../assets/skills-icons/css3-icon.svg";
+import javascriptIcon from "../assets/skills-icons/javascript-icon.svg";
+import reactIcon from "../assets/skills-icons/react-icon.svg";
+import tailwindcssIcon from "../assets/skills-icons/tailwindcss-icon.svg";
+
 import MainContentProjects from "./MainContentProjects";
+import projectsImg from "../assets/projects-img.png";
 
 function MainContent() {
     return (
@@ -81,26 +89,17 @@ function MainContent() {
                     .My Skills
                 </h1>
                 <div className=" space-x-3">
+                    <MainContentSkills path={html5Icon} alt={"Html5"} />
+                    <MainContentSkills path={css3Icon} alt={"Css3"} />
                     <MainContentSkills
-                        path={"src/assets/skills-icons/html5-icon.svg"}
-                        alt={"Html5"}
-                    />
-                    <MainContentSkills
-                        path={"src/assets/skills-icons/css3-icon.svg"}
-                        alt={"Css3"}
-                    />
-                    <MainContentSkills
-                        path={"src/assets/skills-icons/javascript-icon.svg"}
+                        path={javascriptIcon}
                         alt={"JavaScript"}
                     />
                     <MainContentSkills
-                        path={"src/assets/skills-icons/tailwindcss-icon.svg"}
+                        path={tailwindcssIcon}
                         alt={"Tailwindcss"}
                     />
-                    <MainContentSkills
-                        path={"src/assets/skills-icons/react-icon.svg"}
-                        alt={"React"}
-                    />
+                    <MainContentSkills path={reactIcon} alt={"React"} />
                 </div>
             </div>
 
