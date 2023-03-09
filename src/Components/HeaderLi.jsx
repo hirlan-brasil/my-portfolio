@@ -14,15 +14,13 @@ function HeaderLi({ itemName, link, index }) {
             const scrollPosition =
                 window.pageYOffset || document.documentElement.scrollTop;
 
+            console.log(document.documentElement.scrollTop);
+
             for (let i = sections.length - 1; i >= 0; i--) {
                 const section = sections[i];
                 if (scrollPosition <= 100) {
                     setActiveLink();
-                    break;
-                } else if (scrollPosition >= 1300) {
-                    setActiveLink(3);
-                    break;
-                } else if (scrollPosition >= section.offsetTop - 200) {
+                } else if (scrollPosition >= section.offsetTop - 150) {
                     setActiveLink(i);
                     console.log(activeLink);
                     break;
