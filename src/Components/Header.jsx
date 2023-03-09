@@ -21,6 +21,7 @@ function Header() {
             <nav className="md:hidden fixed z-10 w-full flex items-center justify-center bottom-0 pb-4">
                 <ul className="flex space-x-8 border p-2 rounded-full bg-slate-50">
                     <HeaderLi
+                        index={0}
                         itemName={
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +41,7 @@ function Header() {
                         link={"#quemEuSou"}
                     />
                     <HeaderLi
+                        index={1}
                         itemName={
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +61,7 @@ function Header() {
                         link={"#habilidades"}
                     />
                     <HeaderLi
+                        index={2}
                         itemName={
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +81,7 @@ function Header() {
                         link={"#projetos"}
                     />
                     <HeaderLi
+                        index={3}
                         itemName={
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
